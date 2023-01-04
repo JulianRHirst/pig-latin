@@ -1,4 +1,4 @@
-import { pigify } from "../src/pigify";
+import { pigify } from "./piglatin";
 
 describe("test pigify function", () => {
   it('should return "" for "" input', () => {
@@ -12,6 +12,4 @@ describe("test pigify function", () => {
   it('should return "elloHay orldway !" for "Hello world !" input', () => {
     expect(pigify("Hello world !")).toBe("elloHay orldway !");
   });
-
-
 });
