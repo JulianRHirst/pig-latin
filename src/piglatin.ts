@@ -16,7 +16,7 @@
  * 
  */
 
-export const pigify = (english: string) : string => english
-    .split(' ') 
-    .map(word => ( /^[a-zA-Z]+$/.test(word) ? `${word.substring(1)}${word.substring(0,1)}ay` : word))
+export const pigify = (english: string): string => english
+    .split(' ')
+    .map(word => (/^[a-zA-Z]+$/.test(word) ? `${word.substring(1)}${word.substring(0, 1)}ay` : word))
     .join(' ');
